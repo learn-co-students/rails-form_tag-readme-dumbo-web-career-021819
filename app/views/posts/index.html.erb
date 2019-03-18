@@ -1,5 +1,6 @@
 <ul>
   <% @posts.each do |p| %>
-    <li><%= p.title %> - <%= p.description %></li>
+    <!-- <li><%= p.title %> - <%= p.description %></li> -->
+    <%= link_to "#{p.title} - #{p.description}", post_path(p) %>
   <% end %>
 </ul>
